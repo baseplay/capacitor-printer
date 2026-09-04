@@ -1,6 +1,6 @@
 {
   "name": "@baseplay/capacitor-printer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Prints the current Capacitor WebView through the native print dialog (AirPrint / Save as PDF on iOS, PrintManager on Android).",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -27,7 +27,12 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "print",
+    "printer",
+    "pdf",
+    "webview",
+    "airprint"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
@@ -76,5 +81,6 @@
     "android": {
       "src": "android"
     }
-  }
+  },
+  "homepage": "https://github.com/baseplay/capacitor-printer#readme"
 }

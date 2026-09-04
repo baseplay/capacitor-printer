@@ -1,0 +1,64 @@
+{
+  "api": {
+    "name": "PrinterPlugin",
+    "slug": "printerplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "printWebView",
+        "signature": "(options?: PrintWebViewOptions | undefined) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "PrintWebViewOptions | undefined"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "1.0.0"
+          }
+        ],
+        "docs": "Print the current content of the WebView through the native print dialog.\n\nWhat is printed is decided by the page's `@media print` stylesheet, exactly\nas in a desktop browser. The system dialog offers AirPrint and PDF export\non iOS, and includes the built-in \"Save as PDF\" printer on Android. On the\nweb this calls `window.print()`.\n\nResolves once the content has been handed to the system print dialog\n(on iOS: once that dialog has been dismissed, whether printed or cancelled).",
+        "complexTypes": [
+          "PrintWebViewOptions"
+        ],
+        "slug": "printwebview"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "PrintWebViewOptions",
+      "slug": "printwebviewoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "name",
+          "tags": [
+            {
+              "text": "'Document'",
+              "name": "default"
+            },
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "Name of the print job. Shown in the print queue and used as the default\nfile name when the user saves a PDF.",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

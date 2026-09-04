@@ -1,5 +1,7 @@
 # node files
-dist
+# dist/ IS committed: the plugin is installed from a git URL, so consumers get
+# prebuilt output without running a build. Run `npm run build` before tagging.
+example-app/dist
 node_modules
 
 # iOS files
